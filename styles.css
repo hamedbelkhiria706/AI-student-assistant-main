@@ -80,4 +80,38 @@ h1 {
     padding : var(--space-l) var(--space-m);
 }
 
+/* ---------- Feature Cards ---------- */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-m);
+  margin-top: var(--space-m);
+}
+
+.feature-card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-m);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  margin-top: 0;
+  margin-bottom: var(--space-s);
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 
